@@ -22,7 +22,7 @@ let server=http.createServer(app);
 //websocket connection
  const io=new Server(server,{
     cors:{
-        origin:"http://localhost:5173",
+        origin:"https://career-connect-frontend-njua.onrender.com",
         credentials:true,
     }
 })
@@ -31,7 +31,7 @@ setSocketInstance(io);
 
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://career-connect-frontend-njua.onrender.com",
     credentials:true
 }));
 app.use(express.json());
