@@ -1,6 +1,6 @@
 import React, { createContext } from 'react'
 export const authDataContext=createContext();
-const serverUrl="http://localhost:4000"
+const serverUrl="https://career-connect-backend-kdpt.onrender.com"
 let value={
     serverUrl
 }
