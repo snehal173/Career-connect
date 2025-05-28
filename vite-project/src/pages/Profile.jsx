@@ -62,7 +62,7 @@ const Profile = () => {
                        </div>
                         
                        <div className='pl-[20px] mt-7' >
-                       <h2  className=' text-gray-700 text-2xl font-semibold'>{`${profileData.firstname} ${userData.lastname}`}</h2>
+                       <h2  className=' text-gray-700 text-2xl font-semibold'>{`${profileData.firstname} ${profileData.lastname}`}</h2>
                         <p className='text-[18px] text-gray-700'>{profileData.headline || "hi"}</p>
                         <p className='text-[16px] text-gray-700'>{profileData.location || "India"} </p>
                         <p className='text-[16px] text-gray-700'>{`${profileData?.connection?.length} connections `} </p>
