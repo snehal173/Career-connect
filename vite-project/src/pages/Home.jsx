@@ -9,8 +9,10 @@ import { useContext } from 'react'
 import CreatePost from '../components/CreatePost'
 
 const Home = () => {
-  const {edit,setEdit,postPanel,setPostPanel}=useContext(userDataContext)
-  
+  const {edit,setEdit,postPanel,setPostPanel,fetchPosts}=useContext(userDataContext)
+   useEffect(()=>{
+    fetchPosts()
+  },[])
   return (
     <div className='w-full min-h-[100vh] bg-[#f0efe7] pt-[100px] flex lg:items-start items-center justify-center gap-[20px] px-[20px] flex-col lg:flex-row'>
       <Navbar/>
